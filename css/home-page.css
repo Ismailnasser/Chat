@@ -1,0 +1,224 @@
+/* Inline Block display */
+:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #000; }
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+/*
+button {
+  background: transparent;
+  border: 1px solid rgba($blackColor, .5);
+  font-size: $fontSize + 2;
+  padding: $paddingPixels - 2 $paddingPixels + 10;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: $blackColor;
+    color: $whiteColor
+  }
+}
+*/
+/* Header */
+/* End Header */
+.chat {
+  width: 300px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 10px #EEE;
+  position: fixed;
+  bottom: -270px;
+  right: 0;
+  transition: all .2s ease-in-out;
+  /* Chat Header */
+  /* End Chat Header */
+  /* Dialoge Area */
+  /* End Dialoge Area */
+  /* Chat Footer */
+  /* End Chat Footer */ }
+  .chat .wrapper {
+    height: 100%; }
+  .chat .chat-header {
+    height: 50px;
+    background: linear-gradient(to left, #BD39FF, #7B42EF);
+    color: #FFF;
+    padding: 10px;
+    padding-top: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    cursor: pointer; }
+    .chat .chat-header .user-info .avatar img {
+      width: 30px; }
+    .chat .chat-header .user-info .user-name p {
+      margin: 4px 10px 0; }
+    .chat .chat-header .more i {
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      display: none; }
+    .chat .chat-header .more ul {
+      width: 65%;
+      height: 100px;
+      position: absolute;
+      background: #f3f3f3;
+      top: 35px;
+      right: 20px;
+      padding: 25px 0;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      display: none; }
+      .chat .chat-header .more ul li {
+        padding: 0 20px;
+        padding-bottom: 2px; }
+        .chat .chat-header .more ul li:hover {
+          background-color: #F7FFFF; }
+        .chat .chat-header .more ul li a {
+          color: #333;
+          font-size: 15px;
+          display: flex;
+          font-weight: 500; }
+          .chat .chat-header .more ul li a:hover {
+            text-decoration: none; }
+          .chat .chat-header .more ul li a:active {
+            color: #7B42EF; }
+            .chat .chat-header .more ul li a:active i {
+              color: #7B42EF; }
+        .chat .chat-header .more ul li i {
+          color: #555;
+          font-size: 16px;
+          transform: translate(0, -3px);
+          display: flex;
+          align-items: center;
+          margin-right: 8px;
+          margin-top: 5px; }
+  .chat .dialoge {
+    height: 200px; }
+    .chat .dialoge .cover {
+      padding: 10px; }
+      .chat .dialoge .cover img {
+        width: 60px; }
+    .chat .dialoge .message-area {
+      display: none;
+      height: 50px; }
+      .chat .dialoge .message-area img {
+        width: 35px;
+        margin: 10px;
+        margin-top: 40px;
+        transform: scale(0); }
+      .chat .dialoge .message-area .text {
+        overflow: hidden;
+        background: linear-gradient(75deg, #BD39FF, #7B42EF);
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #FFF; }
+        .chat .dialoge .message-area .text ul {
+          display: flex; }
+          .chat .dialoge .message-area .text ul li {
+            width: 5px;
+            height: 5px;
+            background-color: #d4d4d4;
+            border-radius: 50%;
+            margin: 0 2px;
+            transition: all .3s ease-in-out;
+            animation: upAnddown 1s infinite ease-in-out; }
+            .chat .dialoge .message-area .text ul li:first-child {
+              animation-delay: 1s; }
+            .chat .dialoge .message-area .text ul li:nth-child(2) {
+              animation-delay: 1.1s; }
+            .chat .dialoge .message-area .text ul li:last-child {
+              animation-delay: 1.2s; }
+  .chat .chat-footer {
+    background-color: #FFF;
+    position: relative;
+    border-top: 1px solid #EEE;
+    padding: 10px 0;
+    height: 60px; }
+    .chat .chat-footer:active {
+      background-color: #F7FFFF; }
+    .chat .chat-footer .typing-area {
+      flex: 2; }
+      .chat .chat-footer .typing-area textarea {
+        border: none;
+        resize: none;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        max-width: 75%;
+        padding-top: 13px;
+        padding-left: 10px; }
+    .chat .chat-footer .options-area {
+      position: relative;
+      z-index: 11;
+      padding-right: 10px; }
+      .chat .chat-footer .options-area .options {
+        overflow: hidden; }
+        .chat .chat-footer .options-area .options input[type="file"] {
+          position: absolute;
+          width: 20px;
+          height: 22px;
+          overflow: hidden;
+          top: 5px;
+          right: 64px;
+          opacity: 0; }
+        .chat .chat-footer .options-area .options > i {
+          padding: 0 10px;
+          transition: all .2s ease-in-out;
+          cursor: pointer; }
+          .chat .chat-footer .options-area .options > i:last-child {
+            padding-right: 0; }
+  .chat img {
+    border-radius: 50%; }
+
+/* Footer */
+/* End Footer */
+.hide,
+.hide-last {
+  opacity: 0;
+  cursor: none; }
+
+.hide {
+  transform: translateX(-5px); }
+
+.hide-last {
+  transform: translateX(10px);
+  margin-left: -35px; }
+
+.active-c {
+  bottom: 0; }
+
+.scale-in {
+  animation: scaleIn 0.3s ease-in-out 1; }
+
+.scale-out {
+  animation: scaleOut 0.3s ease-in-out 1; }
+
+@keyframes upAnddown {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-3px); }
+  50% {
+    transform: translateY(0); } }
+@keyframes scaleIn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+@keyframes scaleOut {
+  from {
+    transform: scale(1.2); }
+  to {
+    transform: scale(0); } }
+
+/*# sourceMappingURL=home-page.css.map */

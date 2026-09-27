@@ -1,0 +1,25 @@
+:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: $blackColor
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+/*
+button {
+  background: transparent;
+  border: 1px solid rgba($blackColor, .5);
+  font-size: $fontSize + 2;
+  padding: $paddingPixels - 2 $paddingPixels + 10;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: $blackColor;
+    color: $whiteColor
+  }
+}
+*/

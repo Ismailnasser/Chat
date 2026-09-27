@@ -1,0 +1,37 @@
+// Pseudo
+  // Main features required in before and after pseudo
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// Horizontal line
+  // Horizontal line you can put the feature as you like
+@mixin horizontalLine($width, $height, $bgColor) {
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $bgColor;
+  margin: $marginpixels + 5 0;
+}
+
+// Coloring
+  // Put color in any letter between word and word
+@mixin elementColor($color, $fontFamily: "'Cairo', sans-serif") {
+  margin-left: $marginPixels - 5;
+  margin-right: $marginPixels - 5;
+  padding-left: $paddingPixels - 5;
+  padding-right: $paddingPixels - 5;
+}
+
+// Placeholder color
+  // Put the feature that you want to the placeholder like : color, background, etc...
+@mixin input-placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}

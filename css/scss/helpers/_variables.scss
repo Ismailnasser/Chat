@@ -1,0 +1,57 @@
+// COLORS
+  // Main colors
+  $redColor: #e74c3c;
+  $greenColor: #2ecc71;
+  $darkGreen: #27ae60;
+  $blueColor: #3498db;
+  $greyColor: #6b6b6b;
+  $almostBlack: #2c3e50;
+  // Default color
+  $whiteColor: #FFF;
+  $blackColor: #000;
+
+// TYPOGRAPHY
+  // Paragraph
+  $paragraphFontSize: 15px;
+  $paragraphLineHeight: 1.6;
+  $paragraphColor: $greyColor;
+  // HEADINGS
+  $headingFontSize: 4em;
+
+
+// FONT PROPERTIES
+  // Font Family
+  $cairoFont: 'Cairo', sans-serif;
+  $tajwalFont: 'Tajawal', sans-serif;
+  $changeFont: 'Changa', sans-serif;
+  $openSansFont: 'Open Sans', sans-serif;
+  // Font Sizes
+  $fontSize: 15px;
+  $boldFont: 700;
+  $regularFont: 400;
+
+// SPACES
+  // Padding
+  $paddingPixels: 10px;
+  // Margin
+  $marginPixels: 10px;
+
+// DIMENTIONS
+  // Width
+  $mainWidth: 100%;
+  $secondWidth: 100px;
+  // Height
+  $mainHeight: 100%;
+  $secondHeight: 100px;
+
+// DISPLAYS
+  // Block display
+  $blockDisplay: block;
+  // Flexibility display
+  $flexDisplay: flex;
+  /* Inline Block display */
+  $inlineBlockDisplay: inline-block;
+
+// BORDER
+$borderPixels: 1px;
+$borderStyle: solid;

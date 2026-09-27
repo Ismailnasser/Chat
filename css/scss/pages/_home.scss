@@ -1,0 +1,201 @@
+.chat {
+  width: 300px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 10px #EEE;
+  position: fixed;
+  bottom: -270px;
+  right: 0;
+  transition: all .2s ease-in-out;
+  // Chat Wrapper
+  .wrapper {
+    height: 100%
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    height: 50px;
+    background: linear-gradient(to left, #BD39FF, #7B42EF);
+    color: $whiteColor;
+    padding: 10px;
+    padding-top: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    .user-info {
+      .avatar {
+        img {
+          width: 30px
+        }
+      }
+      .user-name {
+        p {
+          margin: 4px 10px 0
+        }
+      }
+    }
+    .more {
+      i {
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        display: none
+      }
+      ul {
+        width: 65%;
+        height: 100px;
+        position: absolute;
+        background: #f3f3f3;
+        top: 35px;
+        right: 20px;
+        padding: 25px 0;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        display: none;
+        li {
+          padding: 0 20px;
+          padding-bottom: 2px;
+          &:hover {
+            background-color: #F7FFFF
+          }
+          a {
+            color: #333;
+            font-size: 15px;
+            display: flex;
+            font-weight: 500;
+            &:hover {
+              text-decoration: none
+            }
+            &:active {
+              color:#7B42EF;
+              i {
+                color: #7B42EF
+              }
+            }
+          }
+          i {
+            color: #555;
+            font-size: 16px;
+            transform: translate(0, -3px);
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            margin-top: 5px
+          }
+        }
+      }
+    }
+  }
+  /* End Chat Header */
+  
+  /* Dialoge Area */
+  .dialoge {
+    height: 200px;
+    .cover {
+      padding: 10px;
+      img {
+        width: 60px
+      }
+    }
+    .message-area {
+      display: none;
+      height: 50px;
+      img {
+        width: 35px;
+        margin: 10px;
+        margin-top: 40px;
+        transform: scale(0)
+      }
+      .text {
+        overflow: hidden;
+        background: linear-gradient(75deg, #BD39FF, #7B42EF);
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #FFF;
+        ul {
+          display: flex;
+          li {
+            width: 5px;
+            height: 5px;
+            background-color: #d4d4d4;
+            border-radius: 50%;
+            margin: 0 2px;
+            transition: all .3s ease-in-out;
+            animation: upAnddown 1s infinite ease-in-out;
+            &:first-child {
+              animation-delay: 1s
+            }
+            &:nth-child(2) {
+              animation-delay: 1.1s
+            }
+            &:last-child {
+              animation-delay: 1.2s
+            }
+          }
+        }
+      }
+    }
+  }
+  /* End Dialoge Area */
+  
+  /* Chat Footer */
+  .chat-footer {
+    background-color: $whiteColor;
+    position: relative;
+    border-top: 1px solid #EEE;
+    padding: 10px 0;
+    height: 60px;
+    &:active {
+      background-color: #F7FFFF
+    }
+    .typing-area {
+      flex: 2;
+      textarea {
+        border: none;
+        resize: none;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        max-width: 75%;
+        padding-top: 13px;
+        padding-left: 10px
+      }
+    }
+    .options-area {
+      position: relative;
+      z-index: 11;
+      padding-right: 10px;
+      .options {
+        overflow: hidden;
+        input[type="file"] {
+          position: absolute;
+          width: 20px;
+          height: 22px;
+          overflow: hidden;
+          top: 5px;
+          right: 64px;
+          opacity: 0
+        }
+        > i {
+          padding: 0 10px;
+          transition: all .2s ease-in-out;
+          cursor: pointer;
+          &:last-child {
+            padding-right: 0
+          }
+        }
+      }
+    }
+  }
+  /* End Chat Footer */
+  
+  // Global Property For All Images In Chat
+  img {
+    border-radius: 50%
+  }
+}

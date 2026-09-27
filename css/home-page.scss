@@ -1,0 +1,34 @@
+// Variables
+  // If You Have A Varialbe Like $color: red; And You Are Using It In All Project,
+  // And One Day The Client Orderd You Change This Color,
+  // Just Go To Variable File And Change The Color To Blue "For Example",
+  // All Property Have The Variable Color Will Change To The Blue,
+  // With Varialbe You Don't Need To Change The Color In All Pages,
+  // Just One Place Change For Your All Pages.
+@import "scss/helpers/variables";
+
+// Mixins
+  // Some Mixins For Typing a Short Lines In Scss
+@import "scss/helpers/mixins";
+
+// Grid System
+  // Custom Grid System For Any Thing That You Need To Change It In The Page,
+  // Or You Need To Reset It In The Page.
+  // You Can Type In This File Some Feature Like Font Family For All Pages.
+@import "scss/layout/grid-system";
+
+// Page Header
+@import "scss/layout/header";
+
+// If The Content Not "Header" Or "Footer".
+// The Style Content Must Be On This File.
+@import "scss/pages/home";
+
+// Page Footer
+@import "scss/layout/footer";
+
+// Classes
+@import "scss/helpers/classes";
+
+// Animations
+@import "scss/helpers/animations";

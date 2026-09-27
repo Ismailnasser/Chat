@@ -1,0 +1,26 @@
+.hide,
+.hide-last {
+  opacity: 0;
+  cursor: none
+}
+
+.hide {
+  transform: translateX(-5px);
+}
+
+.hide-last {
+  transform: translateX(10px);
+  margin-left: -35px;
+}
+
+.active-c {
+  bottom: 0
+}
+
+.scale-in {
+  animation: scaleIn .3s ease-in-out 1
+}
+
+.scale-out {
+  animation: scaleOut .3s ease-in-out 1
+}

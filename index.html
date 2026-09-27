@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Meta Tag For Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Web Designer Name -->
+    <meta name="author" content="Ismail Nasser" />
+    <!-- Keywork for search engine -->
+    <meta name="keywords" content="Web, Site, Design, Fron, End, Developer" />
+    <!-- Description for your webpage -->
+    <meta name="description" content="Unknonw, Is the most beautiful site for you" />
+    <!-- Page Title -->
+    <title>Chat</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/fontawesome/font-awesome.min.css" />
+    <!-- Call Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <!--
+      - Call the custom css file.
+      - Don't call any file under this file.
+      - Call all your files at the top of this files.
+    -->
+    <link rel="stylesheet" href="css/home-page.css" />
+  </head>
+  <body>
+    
+    <section class="chat">
+      <div class="wrapper">
+
+        <!-- Chat Header -->
+        <header class="chat-header d-flex">
+          <div class="user-info d-flex flex-grow-1">
+            <!-- Avatar -->
+            <div class="avatar">
+              <img src="images/avatar.png" />
+            </div>
+            <!-- User name -->
+            <div class="user-name">
+              <p class="text-uppercase">Zakariya</p>
+            </div>
+          </div>
+          <div class="more d-flex justify-content-end align-items-center flex-grow-1 pr-1">
+            <i class="fa fa-ellipsis-h fa-lg"></i>
+            <ul class="list-unstyled">
+              <li>
+                <a href="%20"><i class="fa fa-share fa-lg"></i> Open In Window </a>
+              </li>
+              <li>
+                <a href="#" class="close-chat-button"><i class="fa fa-power-off fa-lg"></i> End Chat</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- End Chat Header -->
+        
+        <!-- Dialoge -->
+        <div class="dialoge">
+          <!-- Cover -->
+          <div class="cover bg-secondary">
+            <img src="images/avatar.png" />
+          </div>
+          <!-- Message Area -->
+          <div class="message-area" id="ma">
+            <div class="message-wrapper d-flex align-items-center">
+              <img src="images/avatar.png" />
+              <div class="text">
+                <!-- Points -->
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Dialoge -->
+        
+        <!-- Chat Footer -->
+        <footer class="chat-footer d-flex">
+          <div class="typing-area">
+            <textarea class="w-100" id="textarea" placeholder="Write Something"></textarea>
+          </div>
+          <div class="options-area text-right d-flex pt-1">
+            <div class="options">
+              <form>
+                <input type="file" />
+              </form>
+              <i class="fa fa-upload fa-lg"></i>
+              <i class="fa fa-smile-o fa-lg"></i>
+              <i class="fa fa-paper-plane fa-lg hide-last"></i>
+            </div>
+          </div>
+        </footer>
+        <!-- End Chat Footer -->
+      </div>
+    </section>
+
+    <!-- 
+        jQuery files 
+    -->
+    <!-- jQuery library file (Root) -->
+    <script src="js/root/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap framework javascript file (Important for bootstrap framework) -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Get on with bootstrap framework because this is file is trigger the menu of the bootstrap framework -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Nice Scroll Plugin To Add Smooth Scroll And Best Shape For Scroll Bar -->
+    <script src="js/nice-scroll/jquery.nicescroll.min.js"></script>
+    <!-- Custom file for the front end developer to type her codes -->
+    <script src="js/custom/custom.js"></script>
+  </body>
+</html>
